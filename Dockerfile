@@ -5,6 +5,8 @@ WORKDIR /main
 
 RUN pip install --upgrade pip
 RUN pip install flask
+RUN pip install pyjwt
+RUN pip install gunicorn
 
 
-ENTRYPOINT ["python", "main.py"]
+ENTRYPOINT ["gunicorn", "-b", ":8080", "main:APP"]

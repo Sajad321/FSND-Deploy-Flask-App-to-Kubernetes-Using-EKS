@@ -9,7 +9,7 @@ phases:
       - curl -sS -o kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/1.14.6/2019-08-22/bin/linux/amd64/kubectl
       - chmod +x ./kubectl ./aws-iam-authenticator
       - export PATH=$PWD/:$PATH
-      - apt-get install build-essential checkinstall
+      - apt-get install build-essential
       - apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
       - wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
       - tar xzf Python-3.7.4.tgz

@@ -20,7 +20,7 @@ phases:
     commands:
       - docker build --tag $REPOSITORY_URI:$TAG .
       - pip install -r requirements.txt
-      - python -m test_main.py
+      - python test_main.py
 
   post_build:
     commands:
